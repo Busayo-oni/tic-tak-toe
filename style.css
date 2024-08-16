@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/e18a2828465323.55c16ef604e61.jpg);
+    background-size: cover;
+}
+h1{
+    color: rgba(129, 5, 5, 0.644);
+    font-weight: 900;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #a09266;
+    border: 2px solid #eedf0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.cell:hover {
+    background-color: #e0e0e0;
+}
+.cell:active{
+    background-color: hsl(0, 0%, 94%);
+}
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: red;
+    font-weight: 800;
+}
+.scoreboard{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/015/485/629/non_2x/city-in-fire-war-destroy-burning-broken-buildings-free-vector.jpg);
+    background-size: cover;
+    color:hsl(0, 0%, 84%);
+    cursor: pointer;
+    border-radius: 10px;
+}
